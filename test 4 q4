@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n=121,t=n,rev=0;
+    while(t){
+        rev=rev*10+t%10;
+        t/=10;
+    }
+    cout<<(n==rev?"Palindrome":"Not Palindrome");
+}
